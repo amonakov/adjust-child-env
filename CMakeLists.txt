@@ -1,0 +1,5 @@
+project (adjust-child-env)
+add_executable(adjust-child-env adjust-child-env.c)
+if (ANDROID)
+  target_link_libraries (adjust-child-env log)
+endif ()
